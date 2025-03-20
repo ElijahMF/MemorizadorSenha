@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorizador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Memorizador de Senhas</h1>
+            <form action="salvar_senha.php" method="POST">
+                <div class="form-group">
+                    <label for="place">Nome do Lugar</label>
+                    <input type="text" id="place" name="place" placeholder="Ex: Banco, Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit" class="btn">Salvar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Memorizador de Senhas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
